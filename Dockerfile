@@ -1,5 +1,4 @@
-FROM node:21.7.0-bullseye-slim
-COPY graphserver.js .
+FROM node:21.7.0-bookworm-slim
 COPY package.json .
 COPY UScities.json .
 RUN npm install &&\
